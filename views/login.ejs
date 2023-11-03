@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="" />
+</head>
+
+<body>
+    <div class="login-ejs">
+        <img src="login-bg.png" alt="Image" class="login__bg" />
+
+        <form action="/actionlogin" method="post" class="login__form">
+            <h1 class="login__title">EJS-LOGIN</h1>
+            <div class="login__inputs">
+                <div class="login__box">
+                    <input type="text" placeholder="Username" name="username" class="login__input" /><i class="ri-mail-fill"></i>
+                    <br/>
+                    <!-- <i class="ri-mail-fill"></i>   <i class="ri-lock-2-fill"></i> -->
+                </div>
+                <div class="login__box">
+                     <input type="password"placeholder="password "  name="password"  class="login__input" /> <i class="ri-lock-2-fill"></i>
+                  <br/>
+                </div>
+                <h4 id="msg">
+                    <%=msg%>
+                </h4>
+                <!-- login__button -->
+                <button type="submit" class="logout">Submit</button>
+                <h2 style="color: black;">Don't have an account?</h2> 
+                <a href="/signup" style="color: white;"><h3>Click Here</h3> </a>
+
+
+                
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

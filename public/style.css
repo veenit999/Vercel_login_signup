@@ -1,0 +1,284 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(0, 0%, 0%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size: 2rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .813rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.color{
+    color:black;
+    font-size: 30px;
+}
+
+.button{
+    size: 50px;
+    font-size: 20px;
+    width: 90px;
+    height: 40px;
+    background-color: #7f7979;
+    text-decoration:none;
+    color: black;
+}
+
+.hey{
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #c1bdb3; */
+  
+
+}
+.mainhome{
+    display: flex;
+    position: relative;
+    /* align-items: center; */
+    justify-content: center;
+    /* align-content: center; */
+    
+}
+
+#Welcome{
+  font-size: 60px;
+  padding-top: 10%;
+}
+#wel{
+  display: flex;
+  justify-content: center;
+  position:relative;
+  /* align-items: center; */
+}
+
+.homepage{
+    /* margin: auto; */
+
+  /* border: 3px solid green;
+  padding: 10px; */
+  margin-top: 10%;
+    display: flex;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    margin-inline: 1.5rem;
+    background-color: hsla(0, 0%, 100%, .01);
+    border: 2px solid hsla(0, 0%, 100%, .7);
+    padding: 2.5rem 1rem;
+    color: var(--white-color);
+    border-radius: 1rem;
+    backdrop-filter: blur(16px);
+    /* align-items: center; */
+    flex-direction: column;
+    /* justify-content: center; */
+    /* margin: auto; */
+    /* padding: auto; */
+    /* justify-content: center;
+    align-content: center;
+    align-self: center; */
+    gap: 2rem;
+
+}
+
+#profilephoto{
+  background-image: url("Nophoto.jpg");
+  background-size: 300px 300px;
+  background-repeat: no-repeat;
+  border-radius: 2500px;
+}
+
+/* #photo{
+  border-radius: 2500px;
+} */
+
+#login{
+    color: black;
+}
+
+.login-ejs{
+    position: relative;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+  }
+
+.login__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+.dashboard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    /* margin-inline: 1.5rem; */
+    background-color: hsla(0, 0%, 100%, .01);
+    border: 2px solid hsla(0, 0%, 100%, .7);
+    padding: 2.5rem 1rem;
+    color: var(--white-color);
+    border-radius: 1rem;
+    backdrop-filter: blur(16px);
+    gap: 30px;
+
+}
+  .login__form {
+
+    position: relative;
+    margin-inline: 1.5rem;
+    background-color: hsla(0, 0%, 100%, .01);
+    border: 2px solid hsla(0, 0%, 100%, .7);
+    padding: 2.5rem 1rem;
+    color: var(--white-color);
+    border-radius: 1rem;
+    backdrop-filter: blur(16px);
+  } 
+
+  .login__title {
+
+    text-align: center;
+    font-size: 49px;
+    margin-bottom: 1.25rem;
+    color: black;
+  }
+
+.login__inputs, 
+.login__box {
+  display: grid;
+  /* justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+}
+
+.login__inputs {
+  row-gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.login__box {
+  grid-template-columns: 1fr max-content;
+  column-gap: .75rem;
+  align-items: center;
+  border: 2px solid hsla(0, 0%, 100%, .7);
+  padding-inline: 1.5rem;
+  border-radius: 8rem;
+  /* padding-top: px; */
+  /* padding-top: 20px; */
+}
+
+
+.login__input, 
+.login__button {
+  border: none;
+  outline: none;
+}
+
+.login__input {
+  /* margin-top: 20px; */
+  /* margin: auto; */
+  font-size: 20px;
+  width: 100%;
+  background: none;
+  color: var(--white-color);
+  padding-block: 1rem;
+}
+
+.login__input::placeholder {
+  color: var(--white-color);
+}
+
+.login__box  {
+  font-size: 1.25rem;
+}
+
+.login__button {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--white-color);
+    border-radius: 4rem;
+    color: var(--black-color);
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+.logout{
+    text-decoration: none;
+    /* padding-top: 100px; */
+    width: 100%;
+    padding: 1rem;
+    /* margin-bottom: 1rem; */
+    text-align: center;
+    
+    border-radius: 4rem;
+    border: 4px solid white;
+   
+    font-weight: 500px;
+    cursor: pointer;
+    /* size: 50px; */
+    font-size: 25px;
+    /* width: 90px;
+    height: 40px; */
+    background-color:white;
+    text-decoration:none;
+    color: black;
+
+}  
+
+#msg{
+    color: black;
+    font-size: 24px;
+}
+.logout-ejs{
+    position: relative;
+    height: 100vh;
+    /* display: grid; */
+    align-items: center;
+    display: flex;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media screen and (min-width: 576px) {
+    .login-ejs{
+      justify-content: center;
+    }
+    .logout-ejs{
+        justify-content: center;
+      }
+      
+    .login__form {
+      width: 420px;
+      padding-inline: 2.5rem; 
+    }
+    .homepage {
+        /* justify-content: center; */
+        width: 420px;
+      padding-inline: 2.5rem; 
+      /* padding-left: 120px; */
+      /* justify-content: center; */
+
+      /* align-content: center; */
+     
+      
+      
+    }
+    .login__title {
+      margin-bottom: 2rem;
+    }
+  }
