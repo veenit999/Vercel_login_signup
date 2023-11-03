@@ -53,7 +53,7 @@ app.set('view engine', 'ejs');
 //--------------------------------
 app.use(express.static("public")); //public folder m html aur css file ko link krne ka middleware
   //ejs set hogya as a view engine
-const port = process.env.PORT || 4040; //port number
+
 
 //EJS is used to send dynamic content
 
@@ -163,6 +163,6 @@ app.post("/uploadfile", upload.single("pic"), function (req,res) {
 
 
 
-
-app.listen(port,()=> console.log(`Listening to port ${port}`));
+const PORT = process.env.PORT
+app.listen(PORT,()=> console.log(`Listening to port ${PORT}`));
 
